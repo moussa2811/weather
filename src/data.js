@@ -16,7 +16,6 @@ export async function getDatas(name,temp){
         mesure = "mile(s)";
         deg = "°F";
     }
-    console.log(`${url}q=${city}&units=${unit}&appid=${apiKey}`)
     let response = await fetch(
                             `${url}q=${city}&units=${unit}&appid=${apiKey}`,
                             {

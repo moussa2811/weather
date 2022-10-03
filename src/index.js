@@ -9,7 +9,6 @@ async function showWeather(){
     let temp = document.querySelector("#tempSelect").value;
     if(name){
         let data = await getDatas(name,temp);
-        console.log(data)
         if(data === "error") alert("City not found");
         else{
             if( !document.querySelector(".display") ){
